@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Evgeny.O](https://up.htmlacademy.ru/htmlcss/28/user/1439277).
-* Наставник: `Неизвестно`.
+* Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
