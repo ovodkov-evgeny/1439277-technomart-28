@@ -12,10 +12,10 @@
       </a>
 
       <div>
-        <form action="" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <button type="submit">Поиск</button>
-          <label for="">Поиск:</label>
-          <input type="search">
+          <label for="header-search">Поиск:</label>
+          <input id="header-search" type="search" name="search">
         </form>
         <a href="">Закладки: <span>0</span></a>
         <a href="">Корзина: <span>10</span></a>
@@ -30,7 +30,7 @@
       </address>
 
       <section>
-        <h2>Информация пользователя</h2>
+        <h2 class="visually-hidden">Информация пользователя</h2>
 
         <a href="">Равшан Джамшутович</a>
         <a href="">Выход</a>
@@ -92,35 +92,55 @@
       <section>
         <h2>Фильтр:</h2>
 
-        <div>
-          <h3>Цена:</h3>
-
-          <input type="range">
-          <p>
-            <span>0</span> &ndash; <span>30000</span>
-          </p>
-        </div>
-
-        <div>
-          <h3>Производители:</h3>
-          <ul>
-            <li>Bosch</li>
-            <li>Интеркол</li>
-            <li>Makita</li>
-            <li>Dewalt</li>
-            <li>Hitachi</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Питание:</h3>
-
-          <ul>
-            <li>Аккумуляторные</li>
-            <li>Сетевые</li>
-          </ul>
-        </div>
-        <button type="button">Показать</button>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset>
+            <legend>Цена:</legend>
+            <label for="filter-price" class="visually-hidden">Цена:</label>
+            <input id="filter-price" name="price" type="range" min="0" max="35000">
+            <p>
+              <span>0</span> &ndash; <span>30000</span>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input id="filter-bosch" name="bosch" type="checkbox" checked>
+                <label for="filter-bosch">Bosch</label>
+              </li>
+              <li>
+                <input id="filter-interskol" name="interskol" type="checkbox">
+                <label for="filter-interskol">Интескол</label>
+              </li>
+              <li>
+                <input id="filter-makita" name="makita" type="checkbox" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li>
+                <input id="filter-dewalt" name="dewalt" type="checkbox">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input id="filter-hitachi" name="hitachi" type="checkbox">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input id="filter-energizer" name="charge-type" type="radio" value="energizer">
+                <label for="filter-energizer">Аккумуляторные</label>
+              </li>
+              <li>
+                <input id="filter-mains-power" name="charge-type" type="radio" value="mains-power">
+                <label for="filter-mains-power">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
@@ -136,7 +156,7 @@
       </section>
 
       <section>
-        <h2>Каталог перфораторов</h2>
+        <h2 class="visually-hidden">Каталог перфораторов</h2>
           <div>
             <div>
               <a href="">Купить</a>
@@ -261,6 +281,13 @@
             </a>
             <p>12500 Р.</p>
           </div>
+
+          <div>
+            <button type="button">Закрыть</button>
+            <p>Товар добавлен в корзину</p>
+            <a href="">Оформить заказ</a>
+            <button type="button">Продолжить покупки</button>
+          </div>
       </section>
 
       <div>
@@ -328,7 +355,7 @@
       </div>
 
       <section>
-        <h2>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li>
             <a href="">Вконтакте</a>
