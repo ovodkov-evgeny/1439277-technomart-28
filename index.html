@@ -4,43 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Техномарт</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header>
-      <a>
-        <img src="./img/icons/logo-technomart.svg" width="220" height="47" alt="Логотип магазина Техномарт">
+    <header class="header">
+      <a class="header-logo">
+        <img src="./img/icons/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт">
       </a>
 
-      <div>
-        <form action="https://echo.htmlacademy.ru" method="get">
+      <div class="header-menu">
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
           <button type="submit" aria-label="Найти"></button>
           <label for="search">Поиск:</label>
           <input id="search" type="search" name="search">
         </form>
-        <a href="">Закладки: <span>0</span></a>
-        <a href="">Корзина: <span>0</span></a>
-        <a href="">Оформить заказ</a>
+        <a class="header-bookmarks" href="">Закладки: <span>0</span></a>
+        <a class="header-cart" href="">Корзина: <span>0</span></a>
+        <a class="header-checkout-btn" href="">Оформить заказ</a>
       </div>
 
-      <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
-      <address>
+      <address class="header-address">
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </address>
 
-      <div>
+      <div class="user-navigation">
         <ul>
           <li>
-            <a href="">Войти</a>
+            <a class="login-link" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+              Войти</a>
           </li>
           <li>
-            <a href="">Регистрация</a>
+            <a class="signup-link" href="">Регистрация</a>
           </li>
         </ul>
       </div>
 
-      <nav>
+      <nav class="main-navigation">
         <ul>
           <li>
             <a>Главная</a>
@@ -288,55 +292,57 @@
         </div>
       </section>
 
-      <section>
-        <h2>Компания «Техномарт»</h2>
+      <div class="index-columns">
+        <section>
+          <h2>Компания «Техномарт»</h2>
 
-        <p>
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими транспортными компаниями:
-        </p>
+          <p>
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:
+          </p>
 
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
 
-        <button type="button">Подробнее о компании</button>
-      </section>
+          <button type="button">Подробнее о компании</button>
+        </section>
 
-      <section>
-        <h2>Контакты</h2>
+        <section>
+          <h2>Контакты</h2>
 
-        <p>
-          Вы можете забрать товар сами, заехав в наш офис:
-        </p>
-        <a href="">
-          <img src="./img/contacts/map.png" width="300" height="158" alt="Карта с адресом офиса">
-        </a>
-        <a href="">Заблудились? Напишите нам!</a>
-        <div>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <div>
-              <label for="letter-name">Ваше имя:</label>
-              <input id="letter-name" name="name" type="text" placeholder="Имя Фамилия" required>
-            </div>
-            <div>
-              <label for="letter-email">Ваш e-mail:</label>
-              <input id="letter-email" name="email" type="email" placeholder="email@example.com" required>
-            </div>
-            <div>
-              <label for="letter-message">Текст письма:</label>
-              <textarea id="letter-message" name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-            </div>
-            <button type="submit">Оформить заказ</button>
-          </form>
-          <button type="button">Закрыть</button>
-        </div>
-      </section>
+          <p>
+            Вы можете забрать товар сами, заехав в наш офис:
+          </p>
+          <a href="">
+            <img src="./img/contacts/map.png" width="300" height="158" alt="Карта с адресом офиса">
+          </a>
+          <a href="">Заблудились? Напишите нам!</a>
+          <div>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <div>
+                <label for="letter-name">Ваше имя:</label>
+                <input id="letter-name" name="name" type="text" placeholder="Имя Фамилия" required>
+              </div>
+              <div>
+                <label for="letter-email">Ваш e-mail:</label>
+                <input id="letter-email" name="email" type="email" placeholder="email@example.com" required>
+              </div>
+              <div>
+                <label for="letter-message">Текст письма:</label>
+                <textarea id="letter-message" name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+              </div>
+              <button type="submit">Оформить заказ</button>
+            </form>
+            <button type="button">Закрыть</button>
+          </div>
+        </section>
+      </div>
 
     </main>
 
