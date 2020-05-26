@@ -320,6 +320,35 @@ color: var(--basic-black);
 .index-columns li::before {
   content: '';
   width: 25px;
-  color: var(--basic-red);
-  position: relative;
+  height: 2px;
+  background: var(--basic-red);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Button */
+
+.button {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--basic-greyblue);
+}
+
+.footer-logo {
+  display: block;
+  background-color: var(--basic-red);
+  padding: 20px 41px 25px;
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
