@@ -15,13 +15,15 @@
 
       <div class="header-menu">
         <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-          <button type="submit" aria-label="Найти"></button>
           <label for="search">Поиск:</label>
           <input id="search" type="search" name="search">
+          <button type="submit" aria-label="Найти">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+          </button>
         </form>
-        <a class="header-bookmarks" href="">Закладки: <span>0</span></a>
-        <a class="header-cart" href="">Корзина: <span>0</span></a>
-        <a class="header-checkout-btn" href="">Оформить заказ</a>
+        <a class="header-link header-bookmarks" href="">Закладки: <span>0</span></a>
+        <a class="header-link header-cart" href="">Корзина: <span>0</span></a>
+        <a class="header-link header-checkout-btn" href="">Оформить заказ</a>
       </div>
 
       <p class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -34,12 +36,12 @@
       <div class="user-navigation">
         <ul>
           <li>
-            <a class="login-link" href="">
+            <a class="user-navigation-link" href="">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M14.875 8.5L6 0v6H0v5h6v6z"/><path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
               Войти</a>
           </li>
           <li>
-            <a class="signup-link" href="">Регистрация</a>
+            <a class="user-navigation-link" href="">Регистрация</a>
           </li>
         </ul>
       </div>
@@ -130,7 +132,7 @@
       </section>
 
       <section>
-        <h2>Популярные товары:</h2>
+        <h2 class="title">Популярные товары:</h2>
 
         <a href="">Все популярные товары</a>
 
@@ -203,7 +205,7 @@
 
       <section>
         <div>
-          <h2>Популярные производители:</h2>
+          <h2 class="title">Популярные производители:</h2>
 
           <a href="">Открыть каталог</a>
         </div>
@@ -253,7 +255,7 @@
       </section>
 
       <section>
-        <h2>Сервисы</h2>
+        <h2 class="title">Сервисы</h2>
 
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами!
@@ -294,7 +296,7 @@
 
       <div class="index-columns">
         <section>
-          <h2>Компания «Техномарт»</h2>
+          <h2 class="title">Компания «Техномарт»</h2>
 
           <p>
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -314,7 +316,7 @@
         </section>
 
         <section>
-          <h2>Контакты</h2>
+          <h2 class="title">Контакты</h2>
 
           <p>
             Вы можете забрать товар сами, заехав в наш офис:
@@ -324,24 +326,6 @@
           </a>
           <br>
           <a class="button" href="">Заблудились? Напишите нам!</a>
-          <div class="letter">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-              <div>
-                <label for="letter-name">Ваше имя:</label>
-                <input id="letter-name" name="name" type="text" placeholder="Имя Фамилия" required>
-              </div>
-              <div>
-                <label for="letter-email">Ваш e-mail:</label>
-                <input id="letter-email" name="email" type="email" placeholder="email@example.com" required>
-              </div>
-              <div>
-                <label for="letter-message">Текст письма:</label>
-                <textarea id="letter-message" name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-              </div>
-              <button type="submit">Оформить заказ</button>
-            </form>
-            <button type="button">Закрыть</button>
-          </div>
         </section>
       </div>
 
@@ -420,13 +404,13 @@
           </ul>
         </section>
 
-        <div class="feedback">
+        <div class="feedback-links">
           <p>
             Обратная связь:
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
         </div>
-        <div class="created">
+        <div class="feedback-links">
           <p>
             Разработано &ndash;
             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
@@ -438,6 +422,25 @@
 
     <div>
       <!-- Подключим карту через JS -->
+    </div>
+
+    <div class="modal-order visually-hidden">
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <div>
+          <label for="order-name">Ваше имя:</label>
+          <input id="order-name" name="name" type="text" placeholder="Имя Фамилия" required>
+        </div>
+        <div>
+          <label for="order-email">Ваш e-mail:</label>
+          <input id="order-email" name="email" type="email" placeholder="email@example.com" required>
+        </div>
+        <div>
+          <label for="order-message">Текст письма:</label>
+          <textarea id="order-message" name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </div>
+        <button type="submit">Оформить заказ</button>
+      </form>
+      <button type="button">Закрыть</button>
     </div>
   </body>
 </html>
