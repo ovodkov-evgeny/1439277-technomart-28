@@ -147,7 +147,6 @@ a {
 .header-logo {
   display: block;
   width: 220px;
-  height: 47px;
   padding-top: 12px;
   padding-right: 57px;
   padding-bottom: 17px;
@@ -168,7 +167,6 @@ a {
 }
 .header-search-btn {
   width: 17px;
-  height: 17px;
 
   background-color: var(--basic-darkgreyblue);
   border: none;
@@ -727,7 +725,6 @@ a {
 .footer-logo {
   display: block;
   width: 220px;
-  height: 68px;
   padding-top: 20px;
   padding-right: 41px;
   padding-bottom: 25px;
@@ -910,7 +907,6 @@ a {
 
 .filter-price-input[type="range"] {
   width: 220px;
-  height: 80px;
 
   background-color: var(--basic-lightyellow);
   border-radius: 2px;
@@ -1034,7 +1030,6 @@ a {
 .catalog-item-price {
   display: block;
   width: 141px;
-  height: 38px;
   margin: 0 auto;
 
   font-weight: 700;
