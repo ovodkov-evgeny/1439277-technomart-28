@@ -433,8 +433,6 @@ a {
 /* Features */
 
 .features-item {
-  width: 300px;
-  height: 123px;
   background-color: var(--special-yellow);
 }
 
@@ -465,8 +463,6 @@ a {
   text-transform: uppercase;
   color: var(--basic-white);
   display: block;
-  width: 135px;
-  height: 38px;
   background-color: var(--white-opacity);
   cursor: pointer;
 }
@@ -492,6 +488,14 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+}
+
+.slider-to-left {
+  cursor: pointer;
+}
+
+.slider-to-right {
+  cursor: pointer;
 }
 
 /* Popular goods */
@@ -540,6 +544,10 @@ a {
   color: var(--basic-white);
 }
 
+.service-title {
+  color: var(--basic-greyblue);
+}
+
 .services-list-item {
   background-color: var(--basic-greyblue);
   box-shadow: 0px 1px 0px var(--basic-darkgreyblue), inset 0px 1px 0px var(--special-blueshadow);
@@ -548,9 +556,10 @@ a {
 
 .services-list-item:hover {
   background-color: var(--basic-darkgreyblue);
+  color: var(--basic-white);
 }
 
-.services-list-item:active {
+.is-active {
   background-color: var(--basic-white);
   box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
   color: var(--basic-greyblue);
@@ -831,6 +840,12 @@ a {
   background-color: var(--basic-lightyellow);
 }
 
+.filter-subtitle {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+
 .filter-list-item {
   list-style: none;
   font-weight: 400;
@@ -844,21 +859,6 @@ a {
   border-bottom: 1px solid var(--special-border);
 }
 
-.filter-brands {
-  border: none;
-  border-bottom: 1px solid var(--special-border);
-}
-
-.filter-charging {
-  border: none;
-}
-
-.filter-subtitle {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 30px;
-}
-
 .filter-price-input {
   background-color: var(--basic-lightyellow);
   font-weight: normal;
@@ -867,6 +867,7 @@ a {
   border: none;
   text-align: center;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .filter-price-input[type="range"] {
@@ -874,6 +875,23 @@ a {
   height: 80px;
   background-color: var(--basic-lightyellow);
   border-radius: 2px;
+}
+
+.filter-brands {
+  border: none;
+  border-bottom: 1px solid var(--special-border);
+}
+
+.filter-brands-label {
+  cursor: pointer;
+}
+
+.filter-charging {
+  border: none;
+}
+
+.filter-charging-label {
+  cursor: pointer;
 }
 
 /* Sorting */
