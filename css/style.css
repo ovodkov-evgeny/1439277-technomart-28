@@ -94,13 +94,13 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", "Arial", sans-serif;
-  line-height: 24px;
   font-weight: 400;
   font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: var(--basic-black);
 
   background-color: var(--basic-white);
-  color: var(--basic-black);
 }
 
 img {
@@ -130,12 +130,12 @@ a {
 }
 
 .title {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  text-transform: uppercase;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -172,8 +172,8 @@ a {
 
   background-color: var(--basic-darkgreyblue);
   border: none;
-  opacity: 0.3;
   cursor: pointer;
+  opacity: 0.3;
 }
 
 .header-search-btn:hover {
@@ -181,19 +181,21 @@ a {
 }
 
 .header-search-input {
-  font-family: "Cuprum", "Arial", sans-serif;
-  background-color: var(--basic-darkgreyblue);
-  border: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-black);
+
+  background-color: var(--basic-darkgreyblue);
+  border: none;
 }
 
 .header-search-input:focus + button {
+  color: var(--basic-red);
+
   background-color: var(--basic-white);
   opacity: 1;
-  color: var(--basic-red);
 }
 
 .header-search-input:focus {
@@ -201,18 +203,19 @@ a {
 }
 
 .header-search-label {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .header-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-white);
+
   cursor: pointer;
 }
 
@@ -227,6 +230,7 @@ a {
   display: inline-block;
   width: 14px;
   height: 16px;
+
   vertical-align: middle;
 
   background-image: url("../img/icons/icon-bookmark.svg");
@@ -243,6 +247,7 @@ a {
   display: inline-block;
   width: 15px;
   height: 15px;
+
   vertical-align: middle;
 
   background-image: url("../img/icons/icon-cart.svg");
@@ -270,19 +275,19 @@ a {
 }
 
 .header-title {
-  font-family: "Cuprum", "Arial", sans-serif;;
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-red);
-  font-style: italic;
+  font-style: italic;;
 }
 
 .header-phone {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-red);
   font-style: normal;
 
@@ -296,16 +301,17 @@ a {
   display: inline-block;
   width: 19px;
   height: 19px;
+
   vertical-align: middle;
 
   background-image: url("../img/icons/icon-phone.svg");
 }
 
 .header-address {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-greyblue);
   font-style: normal;
 }
@@ -317,38 +323,43 @@ a {
 }
 
 .user-navigation-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-black);
-  fill: var(--basic-lightgrey);
 
   background-color: var(--basic-white);
   cursor: pointer;
+
+  fill: var(--basic-lightgrey);
 }
 
 .user-navigation-link[href]:hover {
   color: var(--basic-red);
+
   fill: var(--basic-lightgreyblue);
 }
 
 .user-navigation-link[href]:active {
   color: var(--basic-lightgrey);
+
   fill: var(--basic-lightgrey);
 }
 
 .user-data {
-  font-family: "Cuprum", "Arial", sans-serif;
-  background-color: var(--basic-white);
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-align: center;
+
+  background-color: var(--basic-white);
 }
 
 .user-name {
   color: var(--basic-black);
+
   cursor: pointer;
 }
 
@@ -357,8 +368,9 @@ a {
 }
 
 .user-exit {
-  fill: var(--basic-lightgrey);
   cursor: pointer;
+
+  fill: var(--basic-lightgrey);
 }
 
 .user-exit:hover {
@@ -386,11 +398,12 @@ a {
 }
 
 .user-menu-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-greyblue);
+
   cursor: pointer;
 }
 
@@ -422,11 +435,12 @@ a {
 }
 
 .main-navigation-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-white);
+
   cursor: pointer;
 }
 
@@ -437,32 +451,37 @@ a {
 }
 
 .features-item-title {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-white);
 }
 
 .features-item-title::after {
   content: "";
+
+  display: inline-block;
   width: 44px;
   height: 65px;
+
+  vertical-align: middle;
+
   background-image: url("../img/icons/icon-1.svg");
   background-repeat: no-repeat;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .features-item-link {
-  font-family: "Cuprum", "Arial", sans-serif;
+  display: block;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-align: center;
-  text-transform: uppercase;
   color: var(--basic-white);
-  display: block;
+  text-transform: uppercase;
+
   background-color: var(--white-opacity);
   cursor: pointer;
 }
@@ -483,10 +502,10 @@ a {
 }
 
 .slider-descr {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-white);
 }
 
@@ -502,6 +521,7 @@ a {
 
 .popular-title {
   color: var(--basic-greyblue);
+
   background-color: var(--basic-yellowbackground);
 }
 
@@ -521,11 +541,11 @@ a {
 }
 
 .popular-brands-item:hover {
-  box-shadow: 0px 4px 20px var(--black-opacity);
+  box-shadow: 0 4px 20px var(--black-opacity);
 }
 
 .popular-brands-item:active {
-  box-shadow: 0px 4px 20px var(--black-opacity);
+  box-shadow: 0 4px 20px var(--black-opacity);
   opacity: 0.5;
 }
 
@@ -537,10 +557,10 @@ a {
 
 .services-list {
   list-style: none;
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-white);
 }
 
@@ -550,19 +570,21 @@ a {
 
 .services-list-item {
   background-color: var(--basic-greyblue);
-  box-shadow: 0px 1px 0px var(--basic-darkgreyblue), inset 0px 1px 0px var(--special-blueshadow);
+  box-shadow: 0 1px 0 var(--basic-darkgreyblue), inset 0 1px 0 var(--special-blueshadow);
   cursor: pointer;
 }
 
 .services-list-item:hover {
-  background-color: var(--basic-darkgreyblue);
   color: var(--basic-white);
+
+  background-color: var(--basic-darkgreyblue);
 }
 
 .is-active {
-  background-color: var(--basic-white);
-  box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
   color: var(--basic-greyblue);
+
+  background-color: var(--basic-white);
+  box-shadow: 0 1px 0 var(--basic-white), inset 0 1px 0 var(--basic-white);
 }
 
 /* Index Columns */
@@ -592,13 +614,13 @@ a {
 /* Buttons */
 
 .button {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  text-align: center;
   color: var(--basic-white);
   text-transform: uppercase;
-  text-align: center;
 
   background-color: var(--basic-red);
   border: none;
@@ -614,21 +636,23 @@ a {
   font-size: 13px;
   line-height: 18px;
   text-align: center;
-  border: 1px solid var(--special-border);
-  background-color: var(--basic-white);
   color: var(--basic-black);
+
+  background-color: var(--basic-white);
+  border: 1px solid var(--special-border);
   cursor: pointer;
 }
 
 .button-buy {
-  background-color: var(--basic-green);
-  color: var(--basic-white);
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  box-shadow: inset 0px -3px 0px var(--special-shadow);
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: var(--basic-white);
+
+  background-color: var(--basic-green);
   border-radius: 2px;
+  box-shadow: inset 0 -3px 0 var(--special-shadow);
   cursor: pointer;
 }
 
@@ -642,20 +666,24 @@ a {
 
 .button-buy::before {
   content: "";
-  background-image: url("../img/icons/icon-cart.svg");
+
   display: inline-block;
   width: 15px;
   height: 15px;
-  opacity: 0.3;
+
   vertical-align: middle;
+
+  background-image: url("../img/icons/icon-cart.svg");
+  opacity: 0.3;
 }
 
 .button-bookmark {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-greyblue);
+
   border: 3px solid var(--basic-green);
   border-radius: 2px;
   cursor: pointer;
@@ -671,13 +699,14 @@ a {
 }
 
 .catalog-navigation-btn {
-  background-color: var(--basic-white);
-  border: 1px solid var(--basic-border);
-  border-radius: 2px;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-border);
+  border-radius: 2px;
   cursor: pointer;
 }
 
@@ -714,11 +743,12 @@ a {
 }
 
 .footer-navigation-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-background);
+
   cursor: pointer;
 }
 
@@ -737,16 +767,17 @@ a {
 }
 
 .footer-address {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-white);
   font-style: normal;
 }
 
 .footer-phone {
   color: var(--basic-white);
+
   cursor: pointer;
 }
 
@@ -755,10 +786,10 @@ a {
 }
 
 .copyrights {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-white);
 }
 
@@ -780,15 +811,16 @@ a {
 }
 
 .feedback {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-white);
 }
 
 .feedback-link {
   color: var(--special-lightyellow);
+
   cursor: pointer;
 }
 
@@ -804,12 +836,12 @@ a {
 /* Breadcrumbs */
 
 .breadcrumbs {
-  color: var(--basic-black);
-  text-transform: uppercase;
+  list-style: none;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  list-style: none;
+  color: var(--basic-black);
+  text-transform: uppercase;
 }
 
 .breadcrumbs:first-child {
@@ -819,11 +851,14 @@ a {
 
 .breadcrumbs-item:not(:first-child)::before {
   content: "";
-  background-image: url("../img/icons/icon-right-small.svg");
+
   display: inline-block;
   width: 7px;
   height: 12px;
+
   vertical-align: middle;
+
+  background-image: url("../img/icons/icon-right-small.svg");
 }
 
 /* Filter */
@@ -836,8 +871,9 @@ a {
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  border-radius: 2px;
+
   background-color: var(--basic-lightyellow);
+  border-radius: 2px;
 }
 
 .filter-subtitle {
@@ -851,6 +887,7 @@ a {
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
+
   cursor: pointer;
 }
 
@@ -860,12 +897,13 @@ a {
 }
 
 .filter-price-input {
-  background-color: var(--basic-lightyellow);
   font-weight: normal;
   font-size: 17px;
   line-height: 18px;
-  border: none;
   text-align: center;
+
+  background-color: var(--basic-lightyellow);
+  border: none;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -873,6 +911,7 @@ a {
 .filter-price-input[type="range"] {
   width: 220px;
   height: 80px;
+
   background-color: var(--basic-lightyellow);
   border-radius: 2px;
 }
@@ -900,8 +939,9 @@ a {
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  text-transform: uppercase;
   color: var(--basic-black);
+  text-transform: uppercase;
+
   background-color: var(--basic-lightyellow);
 }
 
@@ -918,35 +958,38 @@ a {
 
 .sorting-link {
   color: inherit;
+
   border-bottom: 1px dotted var(--basic-red);
-  opacity: 0.3;
   cursor: pointer;
+  opacity: 0.3;
 }
 
 .sorting-link[href]:hover {
-  opacity: 1;
   border-bottom: 1px solid var(--basic-red);
+  opacity: 1;
 }
 
 .sorting-link[href]:active {
   color: var(--basic-red);
+
   border: none;
 }
 
 .sorting .sorting-direction {
-  opacity: 0.3;
   border: none;
   cursor: pointer;
+  opacity: 0.3;
 }
 
 .sorting .sorting-direction:hover {
-  opacity: 1;
   border: none;
+  opacity: 1;
 }
 
 .sorting .sorting-direction:active {
-  opacity: 1;
   border: none;
+  opacity: 1;
+
   fill: var(--basic-red);
 }
 
@@ -957,24 +1000,27 @@ a {
 }
 
 .catalog-title {
-  background-color: var(--special-background);
   color: var(--basic-greyblue);
+
+  background-color: var(--special-background);
 }
 
 .catalog-item {
   text-align: center;
+
   border: 1px solid var(--special-border);
 }
 
 .catalog-item:hover {
-  box-shadow: 0px 4px 20px var(--black-opacity);
+  box-shadow: 0 4px 20px var(--black-opacity);
 }
 
 .catalog-item-title {
-  color: var(--basic-black);
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  color: var(--basic-black);
+
   cursor: pointer;
 }
 
@@ -986,16 +1032,18 @@ a {
 }
 
 .catalog-item-price {
-  background-image: url("../img/icons/red-button.svg");
-  background-repeat: no-repeat;
-  color: var(--basic-white);
+  display: block;
+  width: 141px;
+  height: 38px;
+  margin: 0 auto;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 40px;
-  width: 141px;
-  height: 38px;
-  display: block;
-  margin: 0 auto;
+  color: var(--basic-white);
+
+  background-image: url("../img/icons/red-button.svg");
+  background-repeat: no-repeat;
 }
 
 /* About tool */
