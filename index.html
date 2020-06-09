@@ -19,8 +19,8 @@
 
           <div class="header-menu">
             <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-              <label class="header-search-label" for="search">Поиск:</label>
-              <input class="header-search-input" id="search" type="search" name="search">
+              <label class="header-search-label visually-hidden" for="search">Поиск:</label>
+              <input class="header-search-input" id="search" type="search" name="search" placeholder="Поиск:">
               <button class="header-search-btn" type="submit" aria-label="Найти">
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
               </button>
@@ -34,7 +34,7 @@
       </div>
 
       <div class="header-middle container">
-        <p class="header-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
+        <p class="header-title">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
 
         <address class="header-contacts">
           <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -45,7 +45,7 @@
           <ul class="user-navigation-list">
             <li class="user-navigation-item">
               <a class="user-navigation-link" href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M14.875 8.5L6 0v6H0v5h6v6z"/><path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+                <svg class="user-navigation-img" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M14.875 8.5L6 0v6H0v5h6v6z"/><path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
                 Войти</a>
             </li>
             <li class="user-navigation-item">
@@ -89,29 +89,44 @@
       <section class="features container">
         <h2 class="visually-hidden">Преимущества</h2>
 
-        <div class="features-item">
-          <h3 class="features-item-title">Материалы</h3>
-          <a class="features-item-link" href="">На любой вкус</a>
+        <div class="features-item materials">
+          <div class="feature-item-descr">
+            <h3 class="feature-item-title">Материалы</h3>
+            <a class="feature-item-link" href="">На любой вкус</a>
+          </div>
+          <img class="feature-item-img" src="./img/icons/icon-1.svg" alt="Ведро с краской">
         </div>
 
-        <div class="features-item">
-          <h3 class="features-item-title">Инструмент</h3>
-          <a class="features-item-link" href="">На все случаи</a>
+        <div class="features-item tools">
+          <div class="feature-item-descr">
+            <h3 class="feature-item-title">Инструмент</h3>
+            <a class="feature-item-link" href="">На все случаи</a>
+          </div>
+          <img class="feature-item-img" src="./img/icons/icon-2.svg" alt="Дрель">
         </div>
 
-        <div class="features-item">
-          <h3 class="features-item-title">Техника</h3>
-          <a class="features-item-link" href="">Для стройки</a>
+        <div class="features-item equipment">
+          <div class="feature-item-descr">
+            <h3 class="feature-item-title">Техника</h3>
+            <a class="feature-item-link" href="">Для стройки</a>
+          </div>
+          <img class="feature-item-img" src="./img/icons/icon-3.svg" alt="Трактор">
         </div>
 
-        <div class="features-item">
-          <h3 class="features-item-title">Скидки 50&#37;</h3>
-          <a class="features-item-link" href="">На 350 товаров</a>
+        <div class="features-item discount">
+          <div class="feature-item-descr">
+            <h3 class="feature-item-title">Скидки 50&#37;</h3>
+            <a class="feature-item-link" href="">На 350 товаров</a>
+          </div>
+          <img class="feature-item-img" src="./img/icons/icon-4.svg" alt="Корзина с покупками">
         </div>
 
-        <div class="features-item">
-          <h3 class="features-item-title">Доставка</h3>
-          <a class="features-item-link" href="">Бесплатно</a>
+        <div class="features-item delivery">
+          <div class="feature-item-descr">
+            <h3 class="feature-item-title">Доставка</h3>
+            <a class="feature-item-link" href="">Бесплатно</a>
+          </div>
+          <img class="feature-item-img" src="./img/icons/icon-5.svg" alt="Грузовик">
         </div>
 
         <div class="slider">
@@ -291,7 +306,6 @@
               <p class="service-item-descr">
                 Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!
               </p>
-              <img class="service-item-img" src='./img/services/delivery.png' width="468" height="261" alt='Доставка'>
             </div>
 
             <div class="service-item visually-hidden">
@@ -300,7 +314,6 @@
               <p class="service-item-descr">
                 Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
               </p>
-              <img class="service-item-img" src='./img/services/guarantee.png' width="389" height="283" alt='Гарантия'>
             </div>
 
             <div class="service-item visually-hidden">
@@ -311,7 +324,6 @@
               </p>
 
               <a class="button" href="">Отправить заявку</a>
-              <img class="service-item-img" src='./img/services/credit.png' width="465" height="285" alt='Кредит'>
             </div>
           </div>
         </div>
