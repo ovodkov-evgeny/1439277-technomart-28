@@ -115,16 +115,21 @@
           <form action="https://echo.htmlacademy.ru" method="GET">
             <fieldset class="filter-price">
               <legend class="filter-subtitle">Цена:</legend>
-              <div>
-                <label for="filter-range-price" class="visually-hidden" aria-label="Диапазон цен"></label>
-                <input class="filter-price-input" id="filter-range-price" name="price" type="range" min="0" max="35000">
-              </div>
-              <div>
-                <label for="filter-min-price" class="visually-hidden" aria-label="Минимальная цена"></label>
-                <input class="filter-price-input" id="filter-min-price" type="text" name="price" value="0">
-                <span> &mdash; </span>
-                <label for="filter-max-price" class="visually-hidden" aria-label="Максимальная цена"></label>
-                <input class="filter-price-input" id="filter-max-price" type="text" name="price" value="30000">
+              <div class="filter-price-range">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="price-controls">
+                  <label for="filter-min-price" class="visually-hidden" aria-label="Минимальная цена"></label>
+                  <input class="filter-price-input" id="filter-min-price" type="text" name="price" value="0">
+                  <span> &mdash; </span>
+                  <label for="filter-max-price" class="visually-hidden" aria-label="Максимальная цена"></label>
+                  <input class="filter-price-input" id="filter-max-price" type="text" name="price" value="30000">
+                </div>
               </div>
             </fieldset>
             <fieldset class="filter-brands">
