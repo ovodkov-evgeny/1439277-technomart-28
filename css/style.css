@@ -508,6 +508,7 @@ a {
 
 .user-info {
   width: calc(100% / 3);
+  padding-left: 13px;
 }
 
 .user-data {
@@ -568,6 +569,7 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-left: 16px;
   margin-top: 2px;
   justify-content: center;
 
@@ -592,8 +594,21 @@ a {
   color: var(--basic-lightgrey);
 }
 
+.bullet {
+  color: var(--basic-greyblue);
+  margin-right: 14px;
+}
+
+.bullet:hover {
+  color: var(--basic-red);
+}
+
+.bullet:active {
+  color: var(--basic-lightgrey);
+}
+
 .user-menu-link:first-child {
-  margin-right: 33px;
+  margin-right: 14px;
 }
 
 /* Header navigation */
@@ -842,6 +857,10 @@ a {
   color: var(--basic-greyblue);
 }
 
+.button.popular-goods-btn {
+  padding: 10px 24px;
+}
+
 .popular-goods-list {
   display: flex;
   margin: 0;
@@ -911,7 +930,6 @@ a {
 
 .services {
   padding-top: 64px;
-  padding-bottom: 4px;
 
   background-color: var(--basic-background);
 }
@@ -975,7 +993,7 @@ a {
 .service-item {
   width: 100%;
   min-height: 283px;
-  margin-top: 67px;
+  margin-top: 71px;
   margin-left: 80px;
 
   background-image: url("../img/services/delivery.png");
@@ -1015,7 +1033,7 @@ a {
 
 .service-item-descr {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .is-active {
@@ -1047,6 +1065,7 @@ a {
 
 .partners-list {
   margin: 0;
+  margin-top: 3px;
   padding: 0;
 }
 
@@ -1073,8 +1092,9 @@ a {
   background: var(--basic-red);
 }
 
-.details {
+.button.details {
   margin-top: 8px;
+  padding: 10px 40px;
 }
 
 /* Contacts */
@@ -1095,7 +1115,7 @@ a {
 
 .contact-us {
   display: block;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 /* Buttons */
@@ -1221,7 +1241,7 @@ a {
 }
 
 .catalog-navigation-btn:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .catalog-navigation-btn:hover {
@@ -1277,7 +1297,7 @@ a {
   width: 220px;
   padding-top: 20px;
   padding-right: 41px;
-  padding-bottom: 25px;
+  padding-bottom: 18px;
   padding-left: 41px;
 
   background-color: var(--basic-red);
@@ -1309,14 +1329,15 @@ a {
 .footer-navigation {
   display: flex;
   flex-direction: column;
-  margin-left: 11px;
+  margin-left: 14px;
 }
 
 .footer-main-navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-top: 37px;
+  margin: 0;
+  margin-top: 36px;
   padding: 0;
 
   list-style: none;
@@ -1356,7 +1377,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding-top: 36px;
-  padding-bottom: 34px;
+  padding-bottom: 28px;
 }
 
 .copyrights {
@@ -1370,7 +1391,7 @@ a {
 }
 
 .social {
-  margin-left: 161px;
+  margin-left: 148px;
 }
 
 .social-item-list {
@@ -1397,11 +1418,11 @@ a {
   cursor: pointer;
 }
 
-.social-link[href]:hover {
+.social-item:hover {
   background-color: var(--basic-red);
 }
 
-.social-link[href]:active {
+.social-item:active {
   background-color: var(--basic-red);
 }
 
@@ -1564,7 +1585,7 @@ a {
   width: 220px;
   height: 80px;
   margin-top: 11px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1648,7 +1669,7 @@ a {
 
 .filter-brands-list {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 18px;
   padding: 0;
 }
 
@@ -1656,7 +1677,7 @@ a {
   position: relative;
 
   display: block;
-  margin-left: 33px;
+  margin-left: 35px;
 
   cursor: pointer;
 
@@ -1694,11 +1715,15 @@ a {
   border: none;
 }
 
+.charging-title {
+  padding-top: 19px;
+}
+
 .filter-charging-list {
   margin: 0;
-  margin-top: 21px;
+  margin-top: 24px;
   padding: 0;
-  padding-bottom: 14px;
+  padding-bottom: 18px;
 }
 
 .filter-charging-label {
@@ -1793,7 +1818,7 @@ a {
 }
 
 .sorting-item:not(:first-child) {
-  margin-left: 55px;
+  margin-left: 60px;
 }
 
 .sorting-item:last-child {
@@ -1997,9 +2022,22 @@ a {
 /* Modal order */
 
 .modal {
-  position: relative;
-  width: 620px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: var(--basic-white);
   border-top: 7px solid var(--basic-red);
+  box-shadow: 0px 4px 20px var(--black-opacity);
+}
+
+.modal-order {
+  width: 620px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
 }
 
 .order-form {
@@ -2074,6 +2112,13 @@ a {
 }
 
 /* Modal add */
+
+.modal-add {
+  width: 620px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
 
 .modal-add-title {
   margin: 0;
