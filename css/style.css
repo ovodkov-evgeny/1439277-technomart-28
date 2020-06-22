@@ -200,9 +200,7 @@ a {
 }
 
 .header-logo {
-  position: relative;
-
-  width: 220px;
+  width: 253px;
   height: 42px;
   padding-top: 12px;
   padding-right: 57px;
@@ -222,6 +220,7 @@ a {
 }
 
 .header-menu {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -298,6 +297,7 @@ a {
 
 .header-link {
   margin: 0;
+  margin-left: auto;
   padding-top: 9px;
   padding-bottom: 9px;
 
@@ -316,8 +316,8 @@ a {
 }
 
 .header-bookmarks {
-  padding-right: 24px;
-  padding-left: 20px;
+  padding-right: 32px;
+  padding-left: 12px;
 }
 
 .header-bookmarks::before {
@@ -339,8 +339,8 @@ a {
 }
 
 .header-cart {
-  padding-right: 26px;
-  padding-left: 26px;
+  padding-right: 21px;
+  padding-left: 12px;
 }
 
 .header-cart::before {
@@ -639,7 +639,7 @@ a {
 .main-navigation-item {
   padding-top: 16px;
   padding-right: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   padding-left: 27px;
 }
 
@@ -666,7 +666,7 @@ a {
 
 .features {
   display: grid;
-  padding-top: 58px;
+  padding-top: 59px;
   padding-bottom: 59px;
 
   gap: 20px;
@@ -819,7 +819,7 @@ a {
 
 .slider-pagination {
   position: absolute;
-  bottom: 36px;
+  bottom: 28px;
   left: 50%;
 
   transform: translateX(-50%);
@@ -860,7 +860,7 @@ a {
 
 .popular-title {
   margin: 0;
-  margin-top: 4px;
+  margin-top: 2px;
 
   color: var(--basic-greyblue);
 }
@@ -894,11 +894,18 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-top: 25px;
-  padding-right: 14px;
+  padding-right: 19px;
   padding-bottom: 26px;
   padding-left: 28px;
 
   background-color: var(--basic-yellowbackground);
+}
+
+.button.all-brands {
+  padding-top: 11px;
+  padding-right: 38px;
+  padding-bottom: 9px;
+  padding-left: 39px;
 }
 
 .popular-brands-list {
@@ -906,7 +913,7 @@ a {
   margin: 0;
   margin-top: 20px;
   padding: 0;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
 
   list-style: none;
 
@@ -937,7 +944,7 @@ a {
 /* Services */
 
 .services {
-  padding-top: 64px;
+  padding-top: 65px;
 
   background-color: var(--basic-background);
 }
@@ -983,8 +990,8 @@ a {
 
 .services-list-item {
   width: 240px;
-  padding-top: 13px;
-  padding-bottom: 17px;
+  padding-top: 14px;
+  padding-bottom: 18px;
   padding-left: 22px;
 
   background-color: var(--basic-greyblue);
@@ -1000,8 +1007,8 @@ a {
 
 .service-item {
   width: 100%;
-  min-height: 283px;
-  margin-top: 71px;
+  min-height: 281px;
+  margin-top: 73px;
   margin-left: 80px;
 
   background-image: url("../img/services/delivery.png");
@@ -1055,7 +1062,10 @@ a {
 
 .index-columns {
   display: flex;
-  padding: 70px 10px;
+  padding-top: 71px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 70px;
 
   background-color: var(--basic-white);;
 }
@@ -1323,9 +1333,10 @@ a {
 }
 
 .footer-address {
-  width: 321px;
+  width: 324px;
   margin: 0;
   margin-top: 22px;
+  padding-left: 3px;
 
   font-weight: 400;
   font-size: 18px;
@@ -1346,7 +1357,7 @@ a {
 .footer-navigation {
   display: flex;
   flex-direction: column;
-  margin-left: 14px;
+  margin-left: 11px;
 }
 
 .footer-main-navigation {
@@ -1954,13 +1965,6 @@ a {
   transform: rotate(45deg);
 }
 
-.catalog-item-descr {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .catalog-item-title {
   margin: 0;
   padding: 0;
@@ -1979,7 +1983,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 176px;
+  height: 178px;
   width: 100%;
   background-color: var(--basic-white);
 }
@@ -1994,12 +1998,14 @@ a {
 }
 
 .catalog-item-price {
-  display: block;
   width: 141px;
+  margin-top: auto;
+  margin-left: 10px;
+  padding-right: 10px;
 
   font-weight: 700;
   font-size: 17px;
-  line-height: 40px;
+  line-height: 41px;
   color: var(--basic-white);
 
   background-image: url("../img/icons/red-button.svg");
@@ -2032,7 +2038,7 @@ a {
 
 .about-tool {
   padding-top: 64px;
-  padding-bottom: 67px;
+  padding-bottom: 70px;
 
   background-color: var(--basic-background);
 
