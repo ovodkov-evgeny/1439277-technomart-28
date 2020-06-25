@@ -1944,7 +1944,7 @@ a {
 }
 
 .catalog-item:hover .catalog-item-img {
-  z-index: -5;
+  z-index: -1;
 }
 
 .catalog-item:nth-of-type(3n) {
@@ -2095,7 +2095,7 @@ a {
 .modal-order {
   top: 50%;
   bottom: auto;
-  z-index: 5;
+  z-index: 3;
 
   width: 620px;
 
