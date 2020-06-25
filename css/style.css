@@ -220,11 +220,11 @@ a {
 }
 
 .header-menu {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   align-items: center;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -1063,9 +1063,9 @@ a {
 .index-columns {
   display: flex;
   padding-top: 71px;
-  padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 70px;
+  padding-left: 10px;
 
   background-color: var(--basic-white);;
 }
@@ -1175,10 +1175,12 @@ a {
 }
 
 .button-buy {
+  margin-top: 37px;
+  margin-right: 2px;
   padding-top: 10px;
-  padding-right: 40px;
-  padding-left: 25px;
+  padding-right: 41px;
   padding-bottom: 10px;
+  padding-left: 30px;
 
   font-weight: 400;
   font-size: 14px;
@@ -1217,10 +1219,11 @@ a {
 
 .button-bookmark {
   margin-top: 10px;
+  margin-right: 2px;
   padding-top: 7px;
-  padding-right: 29px;
+  padding-right: 31px;
   padding-bottom: 7px;
-  padding-left: 28px;
+  padding-left: 29px;
 
   font-weight: 400;
   font-size: 14px;
@@ -1845,8 +1848,15 @@ a {
   border: none;
 }
 
-.sorting-item:not(:first-child) {
-  margin-left: 60px;
+.sorting-item:nth-child(2) {
+  margin-left: 70px;
+}
+.sorting-item:nth-child(3) {
+  margin-left: 65px;
+}
+
+.sorting-item:nth-child(4) {
+  margin-left: 46px;
 }
 
 .sorting-item:last-child {
@@ -1944,12 +1954,12 @@ a {
 .catalog-new::before {
   content: "new";
   position: absolute;
-  top: 10px;
-  right: -25px;
-
-  width: 100px;
-  height: 0;
+  top: 8px;
+  right: -24px;
   z-index: 2;
+
+  width: 94px;
+  height: 0;
 
   font-weight: 400;
   font-size: 14px;
@@ -1983,8 +1993,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 178px;
   width: 100%;
+  height: 178px;
+
   background-color: var(--basic-white);
 }
 
@@ -2014,17 +2025,17 @@ a {
 
 .catalog-buttons {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  top: 0;
-  left: 0;
-  background-color: var(--basic-white);
   width: 100%;
-  height: 176px;
+  height: 178px;
+
+  background-color: var(--basic-white);
 }
 
 .catalog-navigation {
@@ -2052,7 +2063,7 @@ a {
 }
 
 
-/* Modal order */
+/* Modal */
 
 .modal {
   position: fixed;
@@ -2061,6 +2072,7 @@ a {
   bottom: 0;
   left: 0;
 
+  display: none;
   margin: auto;
 
   background-color: var(--basic-white);
@@ -2068,9 +2080,22 @@ a {
   box-shadow: 0 4px 20px var(--black-opacity);
 }
 
+.modal-show {
+  display: block;
+
+  animation: roll-in-left 0.6s ease-out both;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+/* Modal order */
+
 .modal-order {
   top: 50%;
   bottom: auto;
+  z-index: 5;
 
   width: 620px;
 
@@ -2203,4 +2228,39 @@ a {
 
   background-color: var(--basic-white);
   border: none;
+}
+
+/* Animations */
+
+@keyframes roll-in-left {
+  0% {
+    transform: translate(-800px, -50%) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -50%) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-10px, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(10px, -50%);
+  }
 }
