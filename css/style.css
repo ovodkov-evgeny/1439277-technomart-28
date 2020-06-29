@@ -755,9 +755,6 @@ a {
 }
 
 .slide {
-  display: none;
-  position: relative;
-
   height: 100%;
   padding-left: 24px;
 
@@ -1019,7 +1016,6 @@ a {
 }
 
 .service-item {
-  display: none;
   width: 100%;
   min-height: 281px;
   margin-top: 73px;
@@ -1301,21 +1297,6 @@ a {
 .slider-btn {
   position: absolute;
   bottom: 27px;
-}
-
-.modal-close {
-  position: absolute;
-  top: 21px;
-  right: 11px;
-
-  width: 21px;
-  height: 21px;
-
-  background-color: transparent;
-  background-image: url("../img/icons/icon-close.svg");
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
 }
 
 /* Footer */
@@ -2086,7 +2067,6 @@ a {
   bottom: 0;
   left: 0;
 
-  display: none;
   margin: auto;
 
   background-color: var(--basic-white);
@@ -2094,17 +2074,32 @@ a {
   box-shadow: 0 4px 20px var(--black-opacity);
 }
 
-.modal-show {
-  display: block;
-  animation: roll-in-left 0.6s ease-out both;
-}
-
-.is-show {
-  display: block;
+.modal-animation {
+  animation: roll-in-left 0.6s;
 }
 
 .modal-error {
   animation: shake 0.6s;
+}
+
+.modal-close {
+  position: absolute;
+  top: 21px;
+  right: 11px;
+  z-index: 1;
+
+  width: 21px;
+  height: 21px;
+
+  background-color: transparent;
+  background-image: url("../img/icons/icon-close.svg");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-map .modal-close {
+  top: 45px;
 }
 
 /* Modal order */
@@ -2196,24 +2191,26 @@ a {
 
 .modal-map {
   top: 50%;
+  left: 50%;
   bottom: auto;
   z-index: 5;
 
   width: 940px;
   height: 450px;
 
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 
 /* Modal add */
 
 .modal-add {
   top: 50%;
+  left: 50%;
   bottom: auto;
 
   width: 620px;
 
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .modal-add-title {
@@ -2284,13 +2281,13 @@ a {
   50%,
   70%,
   90% {
-    transform: translate(-10px, -50%);
+    transform: translate(10px, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translate(10px, -50%);
+    transform: translate(-10px, -50%);
   }
 }
