@@ -1,15 +1,38 @@
-// Order Form
+const KEY_ENTER = 13;
+const KEY_ESC = 27;
 
-var contactLink = document.querySelector(".contact-us");
+var orderLink = document.querySelector(".contact-us");
 var modalOrder = document.querySelector(".modal-order");
-var orderForm = modalOrder.querySelector(".order-form");
-var orderClose = modalOrder.querySelector(".modal-close");
-var orderName = modalOrder.querySelector(".order-form-name");
-var orderEmail = modalOrder.querySelector(".order-form-email");
-var orderMessage = modalOrder.querySelector('.order-form-message');
+var orderForm = document.querySelector(".order-form");
+var modalClose = document.querySelector(".modal-close");
+var orderName = document.querySelector(".order-form-name");
+var orderEmail = document.querySelector(".order-form-email");
+var orderMessage = document.querySelector('.order-form-message');
 
 var isStorageSupport = true;
 var storage = "";
+
+var mapLink = document.querySelector(".contacts-map");
+var modalMap = document.querySelector(".modal-map");
+
+var btnLeft = document.querySelector(".slider-to-left");
+var btnRight = document.querySelector(".slider-to-right");
+var slides = document.querySelectorAll(".slide");
+var paginations = document.querySelectorAll(".slider-pagination-btn");
+
+var serviceItemDelivery = document.querySelector(".service-delivery");
+var serviceItemQuarantee = document.querySelector(".service-quarantee");
+var serviceItemCredit = document.querySelector(".service-credit");
+var serviceListItems = document.querySelectorAll(".services-list-item");
+var serviceListCount = serviceListItems.length - 1;
+var serviceItems = document.querySelectorAll(".service-item");
+var serviceItemsCount = serviceItems.length - 1;
+
+var buyLinks = document.querySelectorAll(".button-buy");
+var buyLinksCount = buyLinks.length - 1;
+var modalAdd = document.querySelector(".modal-add");
+
+// Order Form
 
 try {
   storage = localStorage.getItem("name");
@@ -37,9 +60,6 @@ function orderCloseHandler(evt) {
   modalOrder.classList.remove("modal-error");
 }
 
-contactLink.addEventListener("click", orderOpenHandler);
-orderClose.addEventListener("click", orderCloseHandler);
-
 orderForm.addEventListener("submit", function(evt) {
   if (!orderName.value || !orderEmail.value || !orderMessage.value) {
     evt.preventDefault();
@@ -53,28 +73,26 @@ orderForm.addEventListener("submit", function(evt) {
   }
 });
 
-// window.addEventListener("keydown", function (evt) {
-//   if (evt.keyCode === 27) {
-//     if (modalOrder.classList.contains("modal-show") || modalMap.classList.contains("modal-show")) {
-//       evt.preventDefault();
-//       modalOrder.classList.remove("modal-show");
-//       modalOrder.classList.remove("modal-error");
-//       modalMap.classList.remove("modal-show");
-//     }
-//   }
-// });
+document.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === KEY_ESC) {
+    if (!modalOrder.classList.contains("visually-hidden")) {
+      orderCloseHandler(evt);
+    }
+  }
+});
 
+orderLink.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === KEY_ENTER) {
+    if (modalOrder.classList.contains("visually-hidden")) {
+      orderOpenHandler(evt);
+    }
+  }
+});
+
+orderLink.addEventListener("click", orderOpenHandler);
+modalClose.addEventListener("click", orderCloseHandler);
 
 // Map
-
-var mapLink = document.querySelector(".contacts-map");
-var modalMap = document.querySelector(".modal-map");
-var mapClose = modalMap.querySelector(".modal-close");
-
-var KEY_ENTER = 13;
-var KEY_ESC = 27;
-
-ymaps.ready(init);
 
 function init() {
   var myMap = new ymaps.Map(document.querySelector(".modal-map"), {
@@ -99,37 +117,36 @@ function mapCloseHandler(evt) {
     modalMap.classList.add("visually-hidden");
 }
 
-mapLink.addEventListener("click", mapOpenHandler);
-mapClose.addEventListener("click", mapCloseHandler);
-
 mapLink.addEventListener("keydown", function (evt) {
   if (evt.keyCode === KEY_ENTER) {
+    if (modalMap.classList.contains("visually-hidden")) {
       mapOpenHandler(evt);
+    }
   }
 });
 
-mapClose.addEventListener("keydown", function (evt) {
+document.addEventListener("keydown", function (evt) {
   if (evt.keyCode === KEY_ESC) {
+    if (!modalMap.classList.contains("visually-hidden")) {
       mapCloseHandler(evt);
+    }
   }
 });
-// mapLink.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   modalMap.classList.remove("visually-hidden");
-// });
 
-// mapClose.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   modalMap.classList.add("visually-hidden");
-// });
+mapLink.addEventListener("click", mapOpenHandler);
+modalClose.addEventListener("click", mapCloseHandler);
+ymaps.ready(init);
 
 // Slider
 
-var btnLeft = document.querySelector(".slider-to-left");
-var btnRight = document.querySelector(".slider-to-right");
-var slides = document.querySelectorAll(".slide");
-var paginations = document.querySelectorAll(".slider-pagination-btn");
-
+function changeSlide() {
+  slides.forEach(element => {
+    element.classList.toggle("visually-hidden");
+  });
+  paginations.forEach(element => {
+    element.classList.toggle("pagination-active");
+  });
+};
 
 btnRight.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -141,24 +158,7 @@ btnLeft.addEventListener("click", function (evt) {
   changeSlide();
 });
 
-function changeSlide() {
-  slides.forEach(element => {
-    element.classList.toggle("visually-hidden");
-  });
-  paginations.forEach(element => {
-    element.classList.toggle("pagination-active");
-  });
-};
-
 // Services
-
-var serviceItemDelivery = document.querySelector(".service-delivery");
-var serviceItemQuarantee = document.querySelector(".service-quarantee");
-var serviceItemCredit = document.querySelector(".service-credit");
-var serviceListItems = document.querySelectorAll(".services-list-item");
-var serviceListCount = serviceListItems.length - 1;
-var serviceItems = document.querySelectorAll(".service-item");
-var serviceItemsCount = serviceItems.length - 1;
 
 function removeIsActiveTabClass() {
 
@@ -198,10 +198,6 @@ for (var j = 0; j <= serviceListCount; j++ ) {
 }
 
 // Modal add to cart
-
-var buyLinks = document.querySelectorAll(".button-buy");
-var buyLinksCount = buyLinks.length - 1;
-var modalAdd = document.querySelector(".modal-add");
 
 buyLinks.forEach(element => {
   element.addEventListener("click", function(evt) {
