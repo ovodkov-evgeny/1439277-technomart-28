@@ -338,6 +338,10 @@ a {
   opacity: 1;
 }
 
+.bookmarks-not-empty {
+  background-color: var(--basic-red);
+}
+
 .header-cart {
   padding-right: 21px;
   padding-left: 12px;
@@ -359,6 +363,10 @@ a {
 
 .header-cart[href]:hover::before {
   opacity: 1;
+}
+
+.cart-not-empty {
+  background-color: var(--basic-red);
 }
 
 .header-checkout-btn {
@@ -2207,6 +2215,7 @@ a {
   top: 50%;
   left: 50%;
   bottom: auto;
+  z-index: 3;
 
   width: 620px;
 

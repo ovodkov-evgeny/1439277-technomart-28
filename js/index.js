@@ -4,7 +4,7 @@ const KEY_ESC = 27;
 var orderLink = document.querySelector(".contact-us");
 var modalOrder = document.querySelector(".modal-order");
 var orderForm = document.querySelector(".order-form");
-var modalClose = document.querySelector(".modal-close");
+var orderClose = document.querySelector(".order-close");
 var orderName = document.querySelector(".order-form-name");
 var orderEmail = document.querySelector(".order-form-email");
 var orderMessage = document.querySelector('.order-form-message');
@@ -14,6 +14,7 @@ var storage = "";
 
 var mapLink = document.querySelector(".contacts-map");
 var modalMap = document.querySelector(".modal-map");
+var mapClose = document.querySelector(".map-close");
 
 var btnLeft = document.querySelector(".slider-to-left");
 var btnRight = document.querySelector(".slider-to-right");
@@ -28,9 +29,6 @@ var serviceListCount = serviceListItems.length - 1;
 var serviceItems = document.querySelectorAll(".service-item");
 var serviceItemsCount = serviceItems.length - 1;
 
-var buyLinks = document.querySelectorAll(".button-buy");
-var buyLinksCount = buyLinks.length - 1;
-var modalAdd = document.querySelector(".modal-add");
 
 // Order Form
 
@@ -59,6 +57,7 @@ function orderCloseHandler(evt) {
   modalOrder.classList.remove("modal-animation");
   modalOrder.classList.remove("modal-error");
 }
+
 
 orderForm.addEventListener("submit", function(evt) {
   if (!orderName.value || !orderEmail.value || !orderMessage.value) {
@@ -90,7 +89,7 @@ orderLink.addEventListener("keydown", function (evt) {
 });
 
 orderLink.addEventListener("click", orderOpenHandler);
-modalClose.addEventListener("click", orderCloseHandler);
+orderClose.addEventListener("click", orderCloseHandler);
 
 // Map
 
@@ -117,6 +116,7 @@ function mapCloseHandler(evt) {
     modalMap.classList.add("visually-hidden");
 }
 
+
 mapLink.addEventListener("keydown", function (evt) {
   if (evt.keyCode === KEY_ENTER) {
     if (modalMap.classList.contains("visually-hidden")) {
@@ -134,7 +134,7 @@ document.addEventListener("keydown", function (evt) {
 });
 
 mapLink.addEventListener("click", mapOpenHandler);
-modalClose.addEventListener("click", mapCloseHandler);
+mapClose.addEventListener("click", mapCloseHandler);
 ymaps.ready(init);
 
 // Slider
@@ -197,12 +197,7 @@ for (var j = 0; j <= serviceListCount; j++ ) {
   });
 }
 
-// Modal add to cart
 
-buyLinks.forEach(element => {
-  element.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    modalAdd.classList.remove("visually-hidden");
-  });
-});
+
+
 
