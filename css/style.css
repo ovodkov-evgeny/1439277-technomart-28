@@ -87,6 +87,7 @@
   --special-bar: #00CA74;
   --special-send: #F4F4F4;
   --special-buttonbg: #F1F1F1;
+  --special-red: #CA2C37;
 
   --success: #5FBB2D;
   --error: #BA2732;
@@ -227,7 +228,8 @@ a {
 }
 
 .header-logo {
-  width: 253px;
+  display: block;
+  min-width: 220px;
   height: 42px;
   padding-top: 12px;
   padding-right: 57px;
@@ -239,11 +241,15 @@ a {
           box-shadow: 0 5px 0 var(--error);
 }
 
-.header-logo-link[href] {
+.header-logo[href] {
   cursor: pointer;
 }
 
-.header-logo:active {
+.header-logo[href]:hover {
+  background-color: var(--special-red);
+}
+
+.header-logo[href]:active {
   background-color: var(--error);
 }
 
@@ -1129,11 +1135,6 @@ a {
   padding-top: 70px;
 
   list-style: none;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 30px;
-  font-family: var(--second-font);
-  color: var(--basic-white);
 }
 
 .services-list::after {
@@ -1154,11 +1155,19 @@ a {
   padding-top: 14px;
   padding-bottom: 18px;
   padding-left: 22px;
+  text-align: left;
 
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  font-family: var(--second-font);
+
+  color: var(--basic-white);
   background-color: var(--basic-greyblue);
   -webkit-box-shadow: 0 1px 0 var(--basic-darkgreyblue), inset 0 1px 0 var(--special-blueshadow);
           box-shadow: 0 1px 0 var(--basic-darkgreyblue), inset 0 1px 0 var(--special-blueshadow);
   cursor: pointer;
+  border: none;
 }
 
 .services-list-item:hover {
@@ -1322,6 +1331,10 @@ a {
   background-color: var(--basic-red);
   border: none;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--special-red);
 }
 
 .button:active {
@@ -1498,7 +1511,11 @@ a {
   cursor: pointer;
 }
 
-.footer-logo:active {
+.footer-logo[href]:hover {
+  background-color: var(--special-red);
+}
+
+.footer-logo[href]:active {
   background-color: var(--error);
 }
 
@@ -2127,6 +2144,13 @@ a {
   border: none;
 }
 
+.sorting-link[href].is-active {
+  color: var(--basic-red);
+
+  border: none;
+  opacity: 1;
+}
+
 .sorting-item:nth-child(2) {
   margin-left: 70px;
 }
@@ -2244,16 +2268,16 @@ a {
   z-index: -1;
 }
 
+.catalog-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
 .catalog-item:focus-within .catalog-buttons {
   z-index: 1;
 }
 
-.catalog-item:focus-within .catalog-item-img {
-  z-index: -1;
-}
-
-.catalog-item:nth-of-type(3n) {
-  margin-right: 0;
+.catalog-item-img:focus {
+  z-index: 1;
 }
 
 .catalog-new::before {

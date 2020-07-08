@@ -12,11 +12,9 @@
     <header class="header">
       <div class="header-top">
         <div class="container">
-          <div class="header-logo">
-            <a class="header-logo-link">
-              <img class="header-logo-img" src="./img/icons/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт">
-            </a>
-          </div>
+          <a class="header-logo">
+            <img src="./img/icons/logo-technomart.svg" width="107" height="17" alt="Логотип магазина Техномарт">
+          </a>
 
           <div class="header-menu">
             <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
@@ -295,9 +293,15 @@
 
           <div class="services-item-wrapper">
             <ul class="services-list">
-              <li class="services-list-item service-list-delivery is-active">Доставка</li>
-              <li class="services-list-item service-list-quarantee">Гарантия</li>
-              <li class="services-list-item service-list-credit">Кредит</li>
+              <li>
+                <button class="services-list-item service-list-delivery is-active" type="button">Доставка</button>
+              </li>
+              <li>
+               <button class="services-list-item service-list-quarantee" type="button">Гарантия</button>
+              </li>
+              <li>
+               <button class="services-list-item service-list-credit" type="button">Кредит</button>
+              </li>
             </ul>
 
             <div class="service-item service-delivery">
