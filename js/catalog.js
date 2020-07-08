@@ -25,11 +25,11 @@ function addToCartCloseHandler(evt) {
 }
 
 if (cartCount.textContent !== '0') {
-  headerCart.classList.add("cart-not-empty");
+  headerCart.classList.add("is-active");
 }
 
 if (bookmarkCount.textContent !== '0') {
-  headerBookmarks.classList.add("bookmarks-not-empty");
+  headerBookmarks.classList.add("is-active");
 }
 
 buyLinks.forEach(element => {

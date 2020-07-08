@@ -45,10 +45,12 @@
           <h2 class="visually-hidden">Информация пользователя</h2>
 
           <div class="user-data">
-            <svg class="user-logo" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
-            <a class="user-name" href="">Равшан Джамшутович</a>
-            <a href="" aria-label="Выход">
-              <svg class="user-exit" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 21 17"><g><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+            <a class="user-link" href="">
+              <svg class="user-logo" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+              <span class="user-name" href="">Равшан Джамшутович</span>
+            </a>
+            <a href="" class="user-exit" aria-label="Выход">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 21 17"><g><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
             </a>
           </div>
 
@@ -73,7 +75,7 @@
             <a class="main-navigation-link" href="">Компания</a>
           </li>
           <li class="main-navigation-item">
-            <a class="main-navigation-link" href="catalog.html">Каталог</a>
+            <a class="main-navigation-link">Каталог</a>
           </li>
           <li class="main-navigation-item">
             <a class="main-navigation-link" href="">Новости</a>
@@ -119,10 +121,13 @@
               <div class="filter-price-range">
                 <div class="range-controls">
                   <div class="scale">
+                    <label for="price-range" class="visually-hidden" aria-label="Диапазон цен"></label>
+                    <input type="range" id="price-range" class="visually-hidden">
                     <div class="bar"></div>
+                    </input>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0"></div>
-                  <div class="toggle toggle-max" tabindex="0"></div>
+                  <button class="toggle toggle-min" type="button"></button>
+                  <button class="toggle toggle-max" type="button"></button>
                 </div>
                 <div class="price-controls">
                   <label for="filter-min-price" class="visually-hidden" aria-label="Минимальная цена"></label>
@@ -210,9 +215,9 @@
                 <a class="button-buy" href="cart.html">Купить</a>
                 <a class="button-bookmark" href="">В закладки</a>
               </div>
-              <div class="catalog-item-img">
+              <a href="" class="catalog-item-img">
                 <img src="./img/catalog/BFG-6000.jpg" width="218" height="176" alt="Перфоратор BOSCH BFG 6000">
-              </div>
+              </a>
               <a href="">
                 <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -224,9 +229,9 @@
                 <a class="button-buy" href="cart.html">Купить</a>
                 <a class="button-bookmark" href="">В закладки</a>
               </div>
-              <div class="catalog-item-img">
+              <a href="" class="catalog-item-img">
                 <img src="./img/catalog/BFG-6000.jpg" width="218" height="176" alt="Перфоратор BOSCH BFG 6000">
-              </div>
+              </a>
               <a href="">
                 <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -238,9 +243,9 @@
                 <a class="button-buy" href="cart.html">Купить</a>
                 <a class="button-bookmark" href="">В закладки</a>
               </div>
-              <div class="catalog-item-img">
+              <a href="" class="catalog-item-img">
                 <img src="./img/catalog/BFG-6000.jpg" width="218" height="176" alt="Перфоратор BOSCH BFG 6000">
-              </div>
+              </a>
               <a href="">
                 <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -252,9 +257,9 @@
                 <a class="button-buy" href="cart.html">Купить</a>
                 <a class="button-bookmark" href="">В закладки</a>
               </div>
-              <div class="catalog-item-img">
+              <a href="" class="catalog-item-img">
                 <img src="./img/catalog/BFG-2000_3000.jpg" width="218" height="176" alt="Перфоратор BOSCH BFG 3000">
-              </div>
+              </a>
               <a href="">
                 <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
               </a>
@@ -266,9 +271,9 @@
                 <a class="button-buy" href="cart.html">Купить</a>
                 <a class="button-bookmark" href="">В закладки</a>
               </div>
-              <div class="catalog-item-img">
+              <a href="" class="catalog-item-img">
                 <img src="./img/catalog/BFG-6000.jpg" width="218" height="176" alt="Перфоратор BOSCH BFG 6000">
-              </div>
+              </a>
               <a href="">
                 <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -280,9 +285,9 @@
                 <a class="button-buy" href="cart.html">Купить</a>
                 <a class="button-bookmark" href="">В закладки</a>
               </div>
-              <div class="catalog-item-img">
+              <a href="" class="catalog-item-img">
                 <img src="./img/catalog/BFG-2000_3000.jpg" width="218" height="176" alt="Перфоратор BOSCH BFG 2000">
-              </div>
+              </a>
               <a href="">
                 <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
               </a>
@@ -293,9 +298,9 @@
                 <a class="button-buy" href="cart.html">Купить</a>
                 <a class="button-bookmark" href="">В закладки</a>
               </div>
-              <div class="catalog-item-img">
+              <a href="" class="catalog-item-img">
                 <img src="./img/catalog/BFG-2000_3000.jpg" width="218" height="176" alt="Перфоратор BOSCH BFG 3000">
-              </div>
+              </a>
               <a href="">
                 <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
               </a>
@@ -307,9 +312,9 @@
                 <a class="button-buy" href="cart.html">Купить</a>
                 <a class="button-bookmark" href="">В закладки</a>
               </div>
-              <div class="catalog-item-img">
+              <a href="" class="catalog-item-img">
                 <img src="./img/catalog/BFG-6000.jpg" width="218" height="176" alt="Перфоратор BOSCH BFG 6000">
-              </div>
+              </a>
               <a href="">
                 <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -321,9 +326,9 @@
                 <a class="button-buy" href="cart.html">Купить</a>
                 <a class="button-bookmark" href="">В закладки</a>
               </div>
-              <div class="catalog-item-img">
+              <a href="" class="catalog-item-img">
                 <img src="./img/catalog/BFG-2000_3000.jpg" width="218" height="176" alt="Перфоратор BOSCH BFG 2000">
-              </div>
+              </a>
               <a href="">
                 <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
               </a>
