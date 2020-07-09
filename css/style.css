@@ -2650,6 +2650,16 @@ a {
   border: none;
 }
 
+.continue:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-red);
+}
+
+.continue:active {
+  background-color: var(--basic-white);
+  color: var(--basic-lightgrey);
+}
+
 /* Animations */
 
 @-webkit-keyframes roll-in-left {
