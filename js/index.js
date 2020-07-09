@@ -7,7 +7,7 @@ var orderForm = document.querySelector(".order-form");
 var orderClose = document.querySelector(".order-close");
 var orderName = document.querySelector(".order-form-name");
 var orderEmail = document.querySelector(".order-form-email");
-var orderMessage = document.querySelector('.order-form-message');
+var orderMessage = document.querySelector(".order-form-message");
 
 var isStorageSupport = true;
 var storage = "";
@@ -101,8 +101,8 @@ function init() {
 
   myMap.geoObjects.add(new ymaps.Placemark([59.93875, 30.323118],{},
     {
-      preset: 'islands#dotIcon',
-      iconColor: '#EE3643'
+      preset: "islands#dotIcon",
+      iconColor: "#EE3643"
     }));
 }
 

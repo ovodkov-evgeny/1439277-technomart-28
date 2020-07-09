@@ -24,11 +24,11 @@ function addToCartCloseHandler(evt) {
   modalAddToCart.classList.add("visually-hidden");
 }
 
-if (cartCount.textContent !== '0') {
+if (cartCount.textContent !== "0") {
   headerCart.classList.add("is-active");
 }
 
-if (bookmarkCount.textContent !== '0') {
+if (bookmarkCount.textContent !== "0") {
   headerBookmarks.classList.add("is-active");
 }
 

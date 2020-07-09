@@ -1362,6 +1362,7 @@ a {
 }
 
 .button-show:active {
+  outline: none;
   border: 1px solid var(--basic-red);
 }
 
@@ -1462,6 +1463,7 @@ a {
 }
 
 .catalog-navigation-btn:active {
+  outline: none;
   border: 1px solid var(--basic-red);
 }
 
@@ -2174,15 +2176,21 @@ a {
   opacity: 0.3;
 }
 
-.sorting .sorting-direction:hover {
+.sorting .sorting-direction[href]:hover {
   border: none;
   opacity: 1;
 }
 
-.sorting .sorting-direction:active {
+.sorting .sorting-direction[href]:active {
   color: var(--basic-red);
 
   border: none;
+  opacity: 1;
+}
+
+.sorting-direction[href].is-active {
+  color: var(--basic-red);
+
   opacity: 1;
 }
 
